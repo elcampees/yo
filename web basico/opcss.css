@@ -1,0 +1,119 @@
+/* Reset básico */
+body, h1, p, img, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('io.jpg'); /* Imagen de fondo para el body */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    color: #fff; /* Color del texto para que sea visible sobre la imagen de fondo */
+    height: 100vh; /* Altura del body igual a la altura de la ventana del navegador */
+    display: flex;
+    flex-direction: column; /* Para alinear el contenido en columna */
+}
+
+/* Estilos para el header */
+header {
+    background-color: #000; /* Fondo negro para el header */
+    color: #fff; /* Color blanco para el texto */
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%; /* Asegura que el header ocupe todo el ancho de la pantalla */
+    position: relative; /* Para poder posicionar elementos dentro */
+}
+
+header h1 {
+    margin-bottom: 1rem; /* Espacio debajo del título */
+}
+
+nav {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; /* Alinea los íconos a la derecha */
+    display: flex;
+    gap: 1rem; /* Espacio entre los íconos */
+}
+
+.social-icon {
+    font-size: 1.5rem; /* Tamaño más grande para los iconos */
+    color: #fff; /* Color blanco para los iconos */
+    margin: 0 0.5rem; /* Espacio entre iconos */
+}
+
+button {
+    position: absolute; /* Posiciona el botón con respecto al header */
+    top: 1rem;
+    left: 1rem;
+    background: #000000; /* Naranja cálido para el botón */
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+button:hover {
+    background: #000000; /* Naranja más claro al pasar el ratón */
+}
+
+/* Estilos para la página de opciones */
+.option-container {
+    display: flex;
+    justify-content: center; /* Centra las opciones horizontalmente */
+    align-items: center;
+    height: calc(100vh - 4rem); /* Ajusta la altura del contenedor de opciones */
+    background-image: url('io.jpg'); /* Agrega la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho de la pantalla */
+    gap: 1rem; /* Espacio entre las opciones */
+    padding: 0 2rem; /* Añade espacio a los lados del contenedor para que los cuadros no toquen los bordes */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho del contenedor */
+}
+
+.option {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente cálido (naranja) */
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%; /* Ancho del 30% del contenedor */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: rgba(20, 19, 19, 0.8); /* Fondo semi-transparente más claro al pasar el mouse */
+}
+
+.option h2 {
+    margin-bottom: 1rem;
+}
+
+.option p {
+    margin-bottom: 1rem;
+}
+
+/* Clase específica para subir una opción */
+.option.middle-option {
+    position: relative;
+    top: -60px; /* Sube la opción "Vinos" 60px hacia arriba */
+    margin: 0 0.5rem; /* Reduce el espacio entre las opciones */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #000; /* Fondo negro para el pie de página */
+    color: #fff; /* Color blanco para el texto */
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

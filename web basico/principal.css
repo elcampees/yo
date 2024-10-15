@@ -1,0 +1,57 @@
+/* Reset básico */
+body, h1, p, img, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('io.jpg'); /* Imagen de fondo para el body */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    color: #fff; /* Color del texto para que sea visible sobre la imagen de fondo */
+    height: 100vh; /* Altura del body igual a la altura de la ventana del navegador */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.container {
+    text-align: center;
+}
+
+.content-box {
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el contenedor */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.logo {
+    max-width: 150px; /* Tamaño máximo del logo */
+    height: auto; /* Mantiene la relación de aspecto */
+    margin-bottom: 1rem; /* Espacio entre el logo y el texto */
+}
+
+h1 {
+    margin-bottom: 1rem; /* Espacio entre el título y el párrafo */
+}
+
+p {
+    margin-bottom: 2rem; /* Espacio entre el párrafo y los botones */
+}
+
+.button-container button {
+    background: #555;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin: 0.5rem; /* Espacio entre botones */
+    font-size: 1rem;
+}
+
+.button-container button:hover {
+    background: #777; /* Cambia el color al pasar el ratón */
+}
